@@ -25,6 +25,18 @@ nbdist/
 
 target/
 
-### NODEJS ###
-node_modules/
+# Node build artifacts
 package-lock.json
+node_modules
+npm-debug.log
+
+# Local development
+*.env
+*.dev
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+
