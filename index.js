@@ -1,11 +1,10 @@
-var http = require("http");
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-var port = Number(process.env.PORT || 5000);
-
-http.createServer(function(request, response){
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.write("Hello Altomatik");
-    response.end();
-}).listen(port);
-
-console.log("App ready at port "+port);
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/index'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))

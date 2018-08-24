@@ -1,32 +1,4 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-target/
-
 # Node build artifacts
-package-lock.json
 node_modules
 npm-debug.log
 
@@ -38,5 +10,3 @@ npm-debug.log
 # Docker
 Dockerfile
 docker-compose.yml
-
-
