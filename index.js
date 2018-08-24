@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-//const PDFDocument = require('pdfkit')
+const PDFDocument = require('pdfkit')
 const PORT = process.env.PORT || 5000
 const app = express()
 
@@ -31,3 +31,29 @@ redis.on("connect", function(){
     displayContent();
 });
 
+//var fs = require('fs');
+
+//var pdf = new PDFDocument({
+  //size: 'LEGAL', 
+  //info: {
+    //Title: 'Tile of File Here',
+    //Author: 'Some Author',
+  //}
+//});
+
+// Write stuff into PDF
+//pdf.text('Hello Altomatik ');
+//pdf.text('Hello Altomatik');
+
+// Stream contents to a file
+//pdf.pipe(
+  //fs.createWriteStream('file.pdf')
+//)
+  //.on('finish', function () {
+    //console.log('PDF closed');
+  //});
+
+// Close PDF and write file.
+//pdf.end();
+  
+  
