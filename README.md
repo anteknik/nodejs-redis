@@ -10,6 +10,9 @@ Menjalankan dilokal komputer silakan clone ini terlebih dahulu di:
 	
 	$ node index.js
 	
+Berjalan Di port 5000
+Browse ke <iphost>:5000 biasanya di http//:localhost:5000
+	
 Aplikasi ini juga dideploy menggunakan layanan cloud heroku di url :
 
 	https://redisnodeabsen.herokuapp.com/
